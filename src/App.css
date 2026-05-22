@@ -1,0 +1,338 @@
+/* Empty to avoid conflicts with index.css styling */
+
+/* AI Section Styles */
+.ai-hero-section {
+    padding: 36px 0;
+}
+
+.ai-hero-grid {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.ai-hero-content {
+    flex: 1;
+}
+
+.ai-badge {
+    display: inline-block;
+    background: linear-gradient(90deg, #e6f6ff, #e9f0ff);
+    color: #0369a1;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.ai-hero-title {
+    font-size: 28px;
+    margin: 6px 0 6px;
+    color: var(--text-main);
+    font-weight: 800;
+}
+
+.ai-hero-sub {
+    color: var(--text-muted);
+    margin-bottom: 18px;
+}
+
+.ai-hero-center {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ai-assistant-card {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(79, 140, 255, 0.12);
+    padding: 18px;
+    border-radius: 16px;
+    width: 320px;
+    box-shadow: 0 8px 30px rgba(43, 108, 255, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+.ai-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ai-card-body h3 {
+    margin: 0 0 6px;
+}
+
+.ai-card-body .muted {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.ai-flags {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.ai-flags .flag {
+    background: rgba(75, 145, 255, 0.08);
+    color: #60a5fa;
+    padding: 6px 8px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.ai-glow {
+    position: absolute;
+    inset: auto -24px -24px auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    filter: blur(18px);
+    background: radial-gradient(circle at 30% 30%, rgba(79, 140, 255, 0.28), rgba(43, 108, 255, 0.08));
+    z-index: 0;
+}
+
+.ai-recommendation-card {
+    width: 380px;
+    background: linear-gradient(180deg, rgba(39, 76, 255, 0.04), rgba(16, 24, 40, 0.02));
+    border-radius: 14px;
+    padding: 16px;
+    border: 1px solid rgba(79, 140, 255, 0.12);
+    box-shadow: 0 10px 40px rgba(43, 108, 255, 0.06);
+}
+
+.ai-recommendation-card .rec-header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.rec-sub {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 6px;
+}
+
+.rec-list {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.02));
+}
+
+.rec-item.highlight {
+    border: 1px solid rgba(79, 140, 255, 0.18);
+    box-shadow: 0 6px 20px rgba(43, 108, 255, 0.06);
+}
+
+.rec-left {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.rec-emoji {
+    font-size: 22px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #e6f8ff, #eaf0ff);
+    border-radius: 8px;
+}
+
+.rec-right {
+    text-align: right;
+    min-width: 98px;
+}
+
+.pred-label {
+    font-size: 0.75rem;
+    color: #60a5fa;
+    font-weight: 800;
+}
+
+.price {
+    font-weight: 800;
+    margin-top: 4px;
+}
+
+.ai-visuals {
+    width: 280px;
+    position: relative;
+}
+
+.ai-particles {
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 10% 20%, rgba(79, 140, 255, 0.06) 0 2px, transparent 2px), radial-gradient(circle at 70% 80%, rgba(79, 140, 255, 0.04) 0 2px, transparent 2px);
+    background-size: 40px 40px;
+    border-radius: 12px;
+    filter: blur(6px);
+}
+
+.ai-future-card {
+    position: relative;
+    margin-top: 24px;
+    padding: 14px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+    border: 1px solid rgba(79, 140, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(43, 108, 255, 0.04);
+}
+
+/* AI Chat Floating */
+.ai-chat-fab {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    background: linear-gradient(90deg, #2b6cff, #4fc3ff);
+    color: #fff;
+    padding: 12px 14px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    z-index: 9999;
+    box-shadow: 0 12px 40px rgba(43, 108, 255, 0.28);
+}
+
+.ai-chat-fab .fab-glow {
+    position: absolute;
+    inset: auto -18px -18px auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 40% 40%, rgba(79, 140, 255, 0.18), transparent 40%);
+    filter: blur(12px);
+    z-index: -1;
+}
+
+.fab-label {
+    font-weight: 800;
+}
+
+.ai-chat-popup {
+    position: fixed;
+    right: 24px;
+    bottom: 84px;
+    width: 320px;
+    background: var(--bg-card);
+    border: 1px solid rgba(79, 140, 255, 0.08);
+    border-radius: 12px;
+    box-shadow: 0 14px 50px rgba(2, 6, 23, 0.4);
+    z-index: 10000;
+    overflow: hidden;
+}
+
+.ai-chat-header {
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ai-chat-body {
+    padding: 12px;
+    max-height: 220px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ai-chat-body .msg {
+    display: flex;
+}
+
+.ai-chat-body .msg.ai .msg-text {
+    background: linear-gradient(90deg, #2b6cff, #4fc3ff);
+    color: #fff;
+    align-self: flex-start;
+}
+
+.ai-chat-body .msg.user .msg-text {
+    background: var(--bg-card);
+    color: var(--text-main);
+    align-self: flex-end;
+}
+
+.msg-text {
+    padding: 8px 12px;
+    border-radius: 12px;
+    max-width: 78%;
+}
+
+.ai-chat-actions {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid var(--border-color);
+    justify-content: flex-end;
+}
+
+/* AI Insights Widget */
+.ai-insights-widget {
+    background: linear-gradient(180deg, rgba(43, 108, 255, 0.04), rgba(16, 24, 40, 0.02));
+    border: 1px solid rgba(79, 140, 255, 0.10);
+    padding: 14px;
+    border-radius: 12px;
+    max-width: 980px;
+    box-shadow: 0 10px 30px rgba(43, 108, 255, 0.04);
+}
+
+.ai-insights-widget .widget-header h3 {
+    margin: 0 0 6px;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.insight-card {
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.02));
+    border: 1px solid rgba(79, 140, 255, 0.06);
+    text-align: center;
+}
+
+.insight-value {
+    font-weight: 800;
+    margin-top: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .ai-hero-grid {
+        flex-direction: column-reverse;
+    }
+
+    .ai-recommendation-card,
+    .ai-assistant-card {
+        width: 100%;
+    }
+
+    .insights-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
