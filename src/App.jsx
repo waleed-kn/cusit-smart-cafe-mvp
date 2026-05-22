@@ -12,6 +12,7 @@ import SeatReservationPage from './pages/SeatReservationPage';
 import StaffDashboard from './pages/StaffDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import AIChatFloating from './components/AIChatFloating';
+import DeveloperCard from './components/DeveloperCard';
 
 // Custom inline SVG icons for 100% reliable rendering
 const FacebookIcon = (props) => (
@@ -371,10 +372,20 @@ function App() {
           </div>
         </div>
         <div className="container footer-bottom">
-          <p>&copy; {new Date().getFullYear()} CUSIT Smart Café. Developed for CUSIT Software Engineering Project.</p>
-          <div style={{ display: 'flex', gap: '16px' }}>
-            <a href="#" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
-            <a href="#" onClick={(e) => e.preventDefault()}>Terms of Service</a>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '18px', width: '100%', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '14px', alignItems: 'center', minWidth: 0 }}>
+              <p style={{ margin: 0 }}>&copy; {new Date().getFullYear()} CUSIT Smart Café. Developed for CUSIT Software Engineering Project.</p>
+              <div className="dev-credit">Developed by Muhammad Waleed</div>
+            </div>
+
+            <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+              <a href="#" onClick={(e) => e.preventDefault()}>Privacy Policy</a>
+              <a href="#" onClick={(e) => e.preventDefault()}>Terms of Service</a>
+            </div>
+          </div>
+
+          <div className="dev-card-footer">
+            <DeveloperCard />
           </div>
         </div>
       </footer>
